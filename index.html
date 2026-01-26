@@ -1,14 +1,201 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bus Ticket</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/output.css" />
+  </head>
+  <body>
+    <!-- nav bar start -->
+    <section id="navbar">
+      <div class="containerCustom mx-auto py-5 ">
+        <div class="navbar text-black ">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16"
+                  />
+                </svg>
+              </div>
+              <ul
+                tabindex="-1"
+                class="menu text-[18px] menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+              >
+                <li><a>Home</a></li>
+                <li>
+                  <a>Buses</a>
+                  <ul class="p-2">
+                    <li><a>Sakura</a></li>
+                    <li><a>Greenline</a></li>
+                  </ul>
+                </li>
+                <li><a>Contact</a></li>
+              </ul>
+            </div>
+            <a class="btn btn-ghost text-xl">P-Ticket</a>
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal text-[18px] px-1">
+              <li><a>Home</a></li>
+              <li>
+                <details>
+                  <summary>Buses</summary>
+                  <ul class="p-2 bg-base-100 w-40 z-1">
+                    <li><a>Sakura</a></li>
+                    <li><a>Greenline</a></li>
+                  </ul>
+                </details>
+              </li>
+              <li><a>Contact</a></li>
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a
+              class="btn bg-[#e8fae5] text-textParrot rounded-2xl py-4 px-8 border-[1px] border-textParrot"
+              >Bus <img src="images/bus-icon.png" alt="bus-icon.png"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- nav bar end -->
+
+    <!-- banner start -->
+    <section id="banner">
+      <div class="containerCustom mx-auto">
+        <div
+          class="hero h-[550px] overflow-hidden rounded-4xl bg-[url(../images/banner.png)]"
+          
+        >
+          <div class="hero-overlay"></div>
+          <div class="hero-content text-neutral-content text-center">
+            <div class="">
+              <h1 class="mb-5 text-6xl font-bold">End-to-End Travel with <br> <span class="text-textParrot">P Paribahan</span></h1>
+              <p class="mb-5 px-72">
+                Provident cupiditate voluptatem et in. Quaerat fugiat ut
+                assumenda excepturi exercitationem quasi. In deleniti eaque aut
+                repudiandae et a id nisi.
+              </p>
+              <button class="btn bg-textParrot text-textBlack">Get Started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- banner end -->
+
+    <!-- sell information start -->
+     <section id="sellInfo" class="relative -top-20 z-30">
+      <div class="containerCustom mx-auto mb-4">
+        <div class="flex justify-around ">
+          <div class="sellInfoCard bg-white w-[330px] shadow-2xl flex gap-x-4 pr-14 pl-8 py-8 rounded-2xl border-b-2 border-solid border-textParrot">
+            <div class="sellInfoIcon">
+              <img src="images/people.png" alt="images/people.png">
+            </div>
+            <div class="sellInfoText">
+              <h3 class="text-textBlack font-bold text-4xl ">500K+</h3>
+              <p class=" text-[#030712]">Registered users</p>
+            </div>
+          </div>
+          <div class="sellInfoCard bg-white w-[330px] shadow-2xl flex gap-x-4 pr-14 pl-8 py-8 rounded-2xl border-b-2 border-solid border-textParrot">
+            <div class="sellInfoIcon">
+              <img src="images/ticket-cupon.png" alt="images/ticket-cupon.png">
+            </div>
+            <div class="sellInfoText">
+              <h3 class="text-textBlack font-bold text-4xl">1.7 lacks</h3>
+              <p class=" text-[#030712]">Tickets sold</p>
+            </div>
+          </div>
+          <div class="sellInfoCard bg-white w-[330px] shadow-2xl flex gap-x-4 pr-14 pl-8 py-8 rounded-2xl border-b-2 border-solid border-textParrot">
+            <div class="sellInfoIcon">
+              <img src="images/stoppage.png" alt="images/people.png">
+            </div>
+            <div class="sellInfoText">
+              <h3 class="text-textBlack font-bold text-4xl ">80K+</h3>
+              <p class=" text-[#030712]">Rental partners</p>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- sell information end -->
+
+    <!-- offer part start -->
+     <section id="offerPart">
+      <div class="containerCustom">
+        <div class="title text-3xl mt-14 text-black font-bold text-center">
+          <h2>Best offers for you</h2>
+        </div>
+        <div class="cuponPart mt-12">
+          <div class="flex gap-x-8 ">
+            <div class="cuponCard bg-[#FFBF0F] flex rounded-3xl ">
+              <div class="cuponLeftText p-[52px] w-[340px] space-y-2">
+                <h3 class="font-bold text-3xl text-black">15% OFF</h3>
+                <h5 class="font-medium text-[18px] text-black">on your next purchase</h5>
+                <p class="font-extralight text-[15px] text-[#03071268]">use by January 2024</p>
+              </div>
+              <div class="imgPart">
+                <img class="h-[200px]" src="images/cupon-devider.png" alt="images/cupon-devider.png">
+              </div>
+              <div class="cuponRightText space-y-2 w-[220px] pt-[66px] pb-[66px] pl-[26px] pr-[52px]">
+                <h3 class="text-3xl text-black font-bold">NEW15</h3>
+                <p class="text-[15px] text-[#03071268] font-normal">Coupon Code</p>
+              </div>
+            </div>
+            <div class="cuponCard bg-[#F78C9C] flex rounded-3xl ">
+              <div class="cuponLeftText p-[52px] w-[340px] space-y-2">
+                <h3 class="font-bold text-3xl text-black">15% OFF</h3>
+                <h5 class="font-medium text-[18px] text-black">on your next purchase</h5>
+                <p class="font-extralight text-[15px] text-[#03071268]">use by January 2024</p>
+              </div>
+              <div class="imgPart">
+                <img class="h-[200px]" src="images/cupon-devider.png" alt="images/cupon-devider.png">
+              </div>
+              <div class="cuponRightText space-y-2 w-[220px] pt-[66px] pb-[66px] pl-[26px] pr-[52px]">
+                <h3 class="text-3xl text-black font-bold">NEW15</h3>
+                <p class="text-[15px] text-[#03071268] font-normal">Coupon Code</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!-- offer part end -->
+
+    <!-- nav bar start -->
+    <!-- nav bar end -->
+
+    <!-- nav bar start -->
+    <!-- nav bar end -->
+
+    <!-- nav bar start -->
+    <!-- nav bar end -->
+
+    <!-- nav bar start -->
+    <!-- nav bar end -->
+
+    <!-- nav bar start -->
+    <!-- nav bar end -->
+
+    <!-- nav bar start -->
+    <!-- nav bar end -->
+
+    <!-- nav bar start -->
+    <!-- nav bar end -->
 
     <script src="js/script.js"></script>
-</body>
+  </body>
 </html>

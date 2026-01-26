@@ -1,0 +1,9 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+
+@theme {
+  --color-textParrot: #1DD100;
+  --color-textBlack: #030712;
+}
