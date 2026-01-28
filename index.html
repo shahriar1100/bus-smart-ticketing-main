@@ -10,7 +10,7 @@
   <body>
     <!-- nav bar start -->
     <section id="navbar">
-      <div class="containerCustom mx-auto py-5">
+      <div class="container mx-auto py-5">
         <div class="navbar text-black">
           <div class="navbar-start">
             <div class="dropdown">
@@ -75,7 +75,7 @@
 
     <!-- banner start -->
     <section id="banner">
-      <div class="containerCustom mx-auto">
+      <div class="container mx-auto">
         <div
           class="hero h-[550px] overflow-hidden rounded-4xl bg-[url(../images/banner.png)]"
         >
@@ -103,7 +103,7 @@
 
     <!-- sell information start -->
     <section id="sellInfo" class="relative -top-20 z-30">
-      <div class="containerCustom mx-auto mb-4">
+      <div class="container mx-auto mb-4">
         <div class="flex justify-around">
           <div
             class="sellInfoCard bg-white w-[330px] shadow-2xl flex gap-x-4 pr-14 pl-8 py-8 rounded-2xl border-b-2 border-solid border-textParrot"
@@ -148,7 +148,7 @@
 
     <!-- offer part start -->
     <section id="offerPart">
-      <div class="containerCustom">
+      <div class="container mx-auto">
         <div class="title text-3xl mt-14 text-black font-bold text-center">
           <h2>Best offers for you</h2>
         </div>
@@ -219,24 +219,24 @@
     <!-- offer part end -->
 
     <!-- ticket buy part start -->
-    <section id="ticketBuyPart" class="mt-20 pb-20 bg-[#F7F8F8]">
-      <div class="containerCustom">
+       <section id="ticketBuyPart" class="mt-20 pb-20 bg-[#F7F8F8]">
+      <div class="container mx-auto">
         <div class="titlePart text-center">
           <h2 class="text-3xl font-bold text-textBlack mb-5">P.H Paribahan</h2>
-          <p class="text-[16px] font-normal text-[#03071268] mb-5 px-[300px]">
+          <p class="text-[16px] font-normal text-[#03071268] mb-5 lg:px-[300px]">
             Yes, you can run unit tests and view the results directly within the
             app. The integrated testing features allow for a streamlined .
           </p>
         </div>
         <div class="distance bg-white py-5">
-          <div class="flex ml-10 mt-10 mb-10 items-center justify-between">
+          <div class="lg:flex lg:ml-10 mt-10 mb-10 items-center justify-between">
             <div
-              class="distanceLeft border-r-2 pr-10 border-dashed border-textParrot"
+              class="distanceLeft lg:pr-60 border-r-2 border-dashed border-textParrot"
             >
               <div
-                class="distanceMainTitlePart flex justify-between items-center w-[808px]"
+                class="distanceMainTitlePart flex pl-5 pr-5 justify-between items-center lg:w-[808px] md:w-[808px]"
               >
-                <div class="title flex mt-5 gap-x-2.5">
+                <div class="title lg:flex mt-5 gap-x-2.5">
                   <img src="images/bus-logo.png" alt="images/bus-logo.png" />
                   <div class="titleBus">
                     <h3 class="text-textBlack text-2xl font-bold">
@@ -256,7 +256,7 @@
                       alt="images/seat-green.png"
                     />
                   </div>
-                  <span id="seatLeft">40</span> Seats left
+                  <span id="seatLeft">40 </span> Seats left
                 </button>
               </div>
               <div
@@ -278,7 +278,7 @@
                     09:00pm
                   </h4>
                 </div>
-                <div class="flex justify-between pt-4">
+                <div class="lg:flex lg:justify-between flex flex-col gap-5 pt-4">
                   <button
                     class="px-6 py-3 bg-[#03071222] text-[#030712c2] rounded-2xl"
                   >
@@ -300,8 +300,8 @@
                 class="border-r-2 pr-10 border-dashed border-textParrot"
               ></div>
             </div>
-            <div class="distanceRight">
-              <div class="logo pr-28">
+            <div class="distanceRight flex items-center justify-center w-full">
+              <div class="logo">
                 <img src="images/fare.png" alt="images/fare.png" />
                 <h3 class="font-bold text-2xl text-black">550 Taka</h3>
                 <p class="text-[#030712c2]">Per Seat</p>
@@ -311,11 +311,17 @@
         </div>
       </div>
     </section>
+
     <!-- ticket buy part end -->
+
+
+
+
+
 
     <!-- SEAT BUYING start -->
     <section class="bg-[#F7F8F8] pb-20">
-      <div class="max-w-6xl mx-auto rounded-3xl bg-white p-8">
+      <div class="container mx-auto rounded-3xl bg-white p-8">
       <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
         <!-- LEFT SIDE START -->
         <div>
@@ -785,3 +791,18 @@
     <script src="js/script.js"></script>
   </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
