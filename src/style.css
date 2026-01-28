@@ -11,3 +11,13 @@ body{
 .hfhr{
     background: #030712c2;
 }
+
+.seat {
+  @apply bg-[#E5E7EB] text-[#030712b3] 
+         text-center py-3 rounded-lg 
+         cursor-pointer font-medium;
+}
+
+.seat.active {
+  @apply bg-textParrot text-white;
+}
